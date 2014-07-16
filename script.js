@@ -2,7 +2,7 @@ var $ = jQuery.noConflict();
 $(document).ready(function() {
                   
                   var avgwage= 7.4;
-                  var manwage = 61;
+                  var manwage = 77; // or 61
                   $("#doit").click(function(){
 //fri
                                    var forecast=parseFloat($('#fri td').eq(1).children(1).val());
@@ -43,6 +43,9 @@ $(document).ready(function() {
                                    $('#sun td').eq(4).html('&pound;'+labour.toFixed(2)+'<br/>'+(labour/forecast*100).toFixed(1)+'%');
                                    //wtd
                                    $('#wtd2 td').eq(1).html('&pound;'+wtdsales.toFixed(2));
+                                   $('#wtd2 td').eq(2).html(wtdman.toFixed(2));
+                                   $('#wtd2 td').eq(3).html(wtdscheduled.toFixed(2));
+
                                    $('#wtd2 td').eq(4).html('&pound'+wtdlabour.toFixed(2)+'<br/>'+(wtdlabour/wtdsales*100).toFixed(1)+'%');
                                    
                                    //mon
@@ -57,6 +60,9 @@ $(document).ready(function() {
                                    $('#mon td').eq(4).html('&pound;'+labour.toFixed(2)+'<br/>'+(labour/forecast*100).toFixed(1)+'%');
                                    //wtd
                                    $('#wtd3 td').eq(1).html('&pound;'+wtdsales.toFixed(2));
+                                   $('#wtd3 td').eq(2).html(wtdman.toFixed(2));
+                                   $('#wtd3 td').eq(3).html(wtdscheduled.toFixed(2));
+
                                    $('#wtd3 td').eq(4).html('&pound'+wtdlabour.toFixed(2)+'<br/>'+(wtdlabour/wtdsales*100).toFixed(1)+'%');
                                    
                                    
@@ -72,6 +78,8 @@ $(document).ready(function() {
                                    $('#tue td').eq(4).html('&pound;'+labour.toFixed(2)+'<br/>'+(labour/forecast*100).toFixed(1)+'%');
                                    //wtd
                                    $('#wtd4 td').eq(1).html('&pound;'+wtdsales.toFixed(2));
+                                   $('#wtd4 td').eq(2).html(wtdman.toFixed(2));
+                                   $('#wtd4 td').eq(3).html(wtdscheduled.toFixed(2));
                                    $('#wtd4 td').eq(4).html('&pound'+wtdlabour.toFixed(2)+'<br/>'+(wtdlabour/wtdsales*100).toFixed(1)+'%');
                                    
                                    
@@ -87,6 +95,8 @@ $(document).ready(function() {
                                    $('#wed td').eq(4).html('&pound;'+labour.toFixed(2)+'<br/>'+(labour/forecast*100).toFixed(1)+'%');
                                    //wtd
                                    $('#wtd5 td').eq(1).html('&pound;'+wtdsales.toFixed(2));
+                                   $('#wtd5 td').eq(2).html(wtdman.toFixed(2));
+                                   $('#wtd5 td').eq(3).html(wtdscheduled.toFixed(2));
                                    $('#wtd5 td').eq(4).html('&pound'+wtdlabour.toFixed(2)+'<br/>'+(wtdlabour/wtdsales*100).toFixed(1)+'%');
                                    
                                    
@@ -102,6 +112,8 @@ $(document).ready(function() {
                                    $('#thu td').eq(4).html('&pound;'+labour.toFixed(2)+'<br/>'+(labour/forecast*100).toFixed(1)+'%');
                                    //wtd
                                    $('#wtd6 td').eq(1).html('&pound;'+wtdsales.toFixed(2));
+                                   $('#wtd6 td').eq(2).html(wtdman.toFixed(2));
+                                   $('#wtd6 td').eq(3).html(wtdscheduled.toFixed(2));
                                    $('#wtd6 td').eq(4).html('&pound'+wtdlabour.toFixed(2)+'<br/>'+(wtdlabour/wtdsales*100).toFixed(1)+'%');
                                    
 
